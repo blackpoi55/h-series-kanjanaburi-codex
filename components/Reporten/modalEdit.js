@@ -1,5 +1,6 @@
 'use client'
-import { InputAdornment, TextareaAutosize, TextField } from '@mui/material'
+import { InputAdornment, TextField } from '@mui/material';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 import React, { useEffect, useState } from 'react'
 import ModalComponent from '../Modal/Modal'
 import { updatePatientReport } from '@/action/api'

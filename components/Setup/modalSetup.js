@@ -1,5 +1,6 @@
 'use client'
-import { TextareaAutosize, TextField } from '@mui/material'
+import { TextField } from '@mui/material';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 import React, { useEffect, useState } from 'react'
 import ModalComponent from '../Modal/Modal'
 import Toolselect2 from '../Tool/Toolselect2'

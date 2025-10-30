@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import Tooldatepick from '../Tool/Tooldatepick'
 import Toolselect2 from '../Tool/Toolselect2'
 import { Bar, Doughnut } from 'react-chartjs-2';
@@ -24,9 +24,6 @@ ChartJS.register(
 );
 import 'chart.js/auto'; // ต้องมีการนำเข้า Chart.js
 import '../Tool/chart-plugins';
-import { createCanvas } from 'canvas'; // นำเข้า createCanvas จาก canvas
-import { ChartJSNodeCanvas } from 'chartjs-node-canvas'; // นำเข้า ChartJSNodeCanvas
-import fs from 'fs'; // นำเข้า fs เพื่อบันทึกไฟล์
 const options = {
     plugins: {
         legend: {
@@ -56,11 +53,9 @@ function Print_Report(props) {
         if (chartRef.current) {
             const canvas = chartRef.current.canvas;  // เข้าถึง canvas โดยตรงจาก chartRef.current
             const image = canvas.toDataURL('image/png'); // สร้าง Base64 จาก Canvas
-            console.log("image", image)
             setImageSrc(image);
         }
     };
-    console.log("newDataaa", newData)
     const checkTable = (name) => {
         if (name == "CBC") {
             return CBCTable()

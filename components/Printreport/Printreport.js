@@ -1,5 +1,6 @@
 'use client'
-import { InputAdornment, TextareaAutosize, TextField } from '@mui/material'
+import { InputAdornment, TextField } from '@mui/material';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 import React, { useEffect, useMemo, useState } from 'react'
 import Toolselect2 from '../Tool/Toolselect2'
 import { MetaInitialAll } from '../Tool/var'

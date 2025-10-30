@@ -7,7 +7,7 @@ import 'dayjs/locale/th'; // ใช้ locale ที่ต้องการ
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'; // ใช้ไอคอนปฏิทินจาก MUI
 import React, { useEffect, useRef, useState } from 'react';
 import { toBuddhistDate } from './tools';
-import { ClearIcon } from '@mui/x-date-pickers';
+import { ClearIcon } from '@mui/x-date-pickers/icons';
 
 
 
