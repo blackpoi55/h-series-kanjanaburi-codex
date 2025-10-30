@@ -1,12 +1,24 @@
-import { Sarabun } from "next/font/google";
+import localFont from "next/font/local";
 import { Suspense } from "react";
 import "./globals.css";
 import ClientLayoutRedux from "./client-reducers-layout";
 import "antd/dist/reset.css";
 
-const sarabun = Sarabun({
-  weight: ["400", "700"],
-  subsets: ["latin"],
+const sarabun = localFont({
+  src: [
+    {
+      path: "../public/fonts/sarabun/Sarabun-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/sarabun/Sarabun-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-sarabun",
+  display: "swap",
 });
 
 export const metadata = {

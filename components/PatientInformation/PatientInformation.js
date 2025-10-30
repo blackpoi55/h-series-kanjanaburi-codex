@@ -2,7 +2,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import Carddetail from '../Carddetail/Carddetail'
 import Toolselect2 from '../Tool/Toolselect2'
-import { Autocomplete, Collapse, TextareaAutosize, TextField } from '@mui/material'
+import { Autocomplete, Collapse, TextField } from '@mui/material';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Tooldatepick from '../Tool/Tooldatepick'
 import { MetaGenderThais, MetaInitialAll, MetaInitialEngs, MetaLocation, MetaMarital, MetaTypepatient, Typepatient } from '../Tool/var'
 import { InputSwitch } from '../Tool/input'
