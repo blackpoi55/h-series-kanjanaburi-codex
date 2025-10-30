@@ -1,0 +1,59 @@
+-ติดตั้ง qpdf (ถ้ายังไม่มี) Windows
+
+เลือกไฟล์ qpdf-xxx-bin-msvc64.zip (สำหรับ Windows 64-bit)
+แตกไฟล์ .zip ไปที่ C:\qpdf\
+ตรวจสอบว่ามี qpdf.exe อยู่ที่
+C:\qpdf\bin\qpdf.exe
+
+- เพิ่ม qpdf ลงใน Environment Variables
+ถ้าติดตั้งแล้ว แต่ยังใช้คำสั่ง qpdf ไม่ได้ → ต้องเพิ่ม Path ให้ Windows รู้จัก
+
+กด Win + R แล้วพิมพ์ sysdm.cpl กด Enter
+ไปที่แท็บ Advanced → คลิก Environment Variables
+ที่ System Variables → เลือก Path → คลิก Edit...
+คลิก New แล้วเพิ่มค่า:
+C:\qpdf\bin
+กด OK → Restart เครื่อง
+
+-หลังจาก Restart เครื่อง เปิด CMD ใหม่ แล้วพิมพ์:
+qpdf --version
+ถ้าขึ้นเวอร์ชัน เช่น
+qpdf version 11.5.0
+แสดงว่าพร้อมใช้งาน ✅ สามารถลองรัน API ใหม่ได้เลย 🚀
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+สำหรับการติดตั้ง qpdf บน Linux สามารถทำตามขั้นตอนดังนี้:
+
+ดาวน์โหลดและติดตั้ง qpdf บน Linux ให้ติดตั้ง qpdf โดยใช้คำสั่ง package manager ของ Linux เช่น:
+
+บน Ubuntu/Debian:
+sudo apt update
+sudo apt install qpdf
+
+บน CentOS/RHEL:
+sudo yum install qpdf
+
+หรือถ้าต้องการติดตั้งจากแหล่งที่ดาวน์โหลดเอง คุณสามารถดาวน์โหลดไฟล์ tar.gz แล้วแตกไฟล์:
+wget https://github.com/qpdf/qpdf/releases/download/release-qpdf-11.5.0/qpdf-11.5.0.tar.gz
+tar -xvzf qpdf-11.5.0.tar.gz
+cd qpdf-11.5.0
+./configure
+make
+sudo make install
+
+ตรวจสอบการติดตั้ง หลังจากติดตั้งเสร็จสิ้นให้ตรวจสอบเวอร์ชันของ qpdf โดยใช้คำสั่ง:
+qpdf --version
+
+ถ้าปรากฏเวอร์ชันของ qpdf แสดงว่าติดตั้งสำเร็จ
+
+เพิ่ม qpdf ลงใน PATH (ถ้าติดตั้งด้วยวิธีการจากไฟล์ tar.gz) ถ้าคุณติดตั้งจากไฟล์ tar.gz และ qpdf ไม่สามารถใช้งานได้จากทุกที่ในเทอร์มินัล ให้เพิ่มตำแหน่งของ qpdf ในไฟล์ .bashrc หรือ .zshrc (ขึ้นอยู่กับ shell ที่คุณใช้) โดยเพิ่มบรรทัดนี้:
+export PATH=$PATH:/path/to/qpdf/bin
+
+ตัวอย่างเช่น:
+export PATH=$PATH:/home/username/qpdf-11.5.0/bin
+
+หลังจากนั้นให้รันคำสั่ง:
+source ~/.bashrc
+
+เพียงเท่านี้ qpdf จะพร้อมใช้งานบน Linux ของคุณแล้ว!

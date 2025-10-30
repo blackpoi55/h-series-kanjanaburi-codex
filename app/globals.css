@@ -1,0 +1,617 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.a4 {
+  font-family: "Sarabun", sans-serif !important;
+  width: 210mm !important;
+  height: 302mm !important;
+  margin: auto !important;
+  font-size: 14px;
+}
+
+.a44 {
+  font-family: "Sarabun", sans-serif !important;
+  width: auto !important;
+  height: auto !important;
+  margin: auto !important;
+  font-size: 14px;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  font-family: "Sarabun", sans-serif !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  font-family: "Sarabun", sans-serif !important;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: "Sarabun", sans-serif !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Sarabun", sans-serif !important;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: "Sarabun", sans-serif !important;
+}
+
+@font-face {
+  font-family: "Sarabun";
+  src: url("/fonts/sarabun/Sarabun-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sarabun", "sans-serif";
+  src: url("/fonts/sarabun/Sarabun-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sarabun", "sans-serif";
+  src: url("/fonts/sarabun/Sarabun-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sarabun", "sans-serif";
+  src: url("/fonts/sarabun/Sarabun-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sarabun", "sans-serif";
+  src: url("/fonts/sarabun/Sarabun-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.bg-login {
+  background-image: url("/images/Loginbackground.png");
+  background-size: cover;
+}
+.bg-care {
+  background-image: url("/images/homecarebg.png");
+  background-size: cover; /* หรือ contain, auto, 100% 100% แล้วแต่ความต้องการ */
+  background-repeat: no-repeat; /* หรือ repeat, repeat-x, repeat-y แล้วแต่ความต้องการ */
+  background-position: center; /* หรือตำแหน่งอื่นๆ เช่น top, bottom, left, right */
+}
+.custom-datepicker {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.custom-datepicker:focus {
+  outline: none;
+  border-color: #3f51b5;
+  /* เปลี่ยนสีเมื่อโฟกัส */
+}
+
+.custom-datepicker::-webkit-calendar-picker-indicator {
+  background: url("/path/to/your/calendar-icon.svg") no-repeat center;
+  background-size: 1.2em;
+}
+
+.custom-datepicker::placeholder {
+  color: #aaa;
+}
+
+.svg-icon {
+  fill: #365382;
+  transition: fill;
+}
+
+.svg-icon:hover {
+  fill: #ffffff;
+}
+
+
+
+.tablePatientInformation {
+  background: #FFFFFF;
+  z-index: 0;
+  box-shadow: 0px 2px 4px 0px rgba(17, 17, 17, 0.25);
+  border-radius: 0.5rem;
+}
+
+.tablePatientInformation th {
+  background: #E2E2E2;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  box-shadow: 0px 2px 4px 0px rgba(17, 17, 17, 0.25);
+}
+
+.tablePatientInformation thead {
+  position: sticky;
+  inset-block-start: 0;
+  top: 0;
+  background-color: #E2E2E2;
+}
+
+.tablePatientInformation thead tr {
+  background: #ffffff;
+  border-bottom-width: 1px;
+  box-shadow: 0px 2px 4px 0px #11111140;
+}
+
+.tablePatientInformation thead {
+  position: sticky;
+  inset-block-start: 0;
+  top: 0;
+  background-color: #E2E2E2;
+}
+
+.tablePatientInformation tbody {
+  background-color: #ffffff;
+}
+
+
+.tablePatientInformation tbody td {
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.tablePatientInformation tbody tr {
+  background: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+
+}
+
+
+.tablePatientInformation tbody tr.hover:hover {
+  background-color: #eaeaea;
+}
+
+.tablePatientInformation tbody tr.hover {
+  cursor: pointer;
+}
+
+.td-centerLine::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: black;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.noscroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.custom-swal-modal-cancel-height {
+  height: 200px;
+  z-index: 9999;
+}
+
+.custom-swal-modal-clear-height {
+  height: 200px;
+  z-index: 9999;
+}
+
+.custom-swal-modal-save-height {
+  height: 200px;
+  z-index: 9999;
+}
+
+.custom-swal-modal-succeed-height {
+  height: 250px;
+  z-index: 9999;
+}
+
+.custom-swal-modal-warning-height {
+  height: 250px;
+  z-index: 9999;
+}
+
+.custom-swal-text {
+  text-align: center;
+}
+
+
+
+/* ใช้เฉพาะหน้า report---> report2 */
+
+.tableList,
+.tableList-border-null {
+  background: #ffffff;
+  z-index: 0;
+}
+
+.tableList th,
+.tableList-border-null th {
+  background: #ffffff;
+  padding: 0.5rem;
+  /* font-size: 1rem; */
+  line-height: 1.5rem;
+}
+
+.tableList thead,
+.tableList-border-null thead {
+  position: sticky;
+  inset-block-start: 0;
+  top: 0;
+}
+
+.tableList tfoot,
+.tableList-border-null tfoot {
+  inset-block-end: -1px;
+  position: sticky;
+  border-bottom-width: 1px;
+}
+
+.tableList tbody td,
+.tableList-border-null tbody td {
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.tableList tbody tr {
+  background: #ffffff;
+  border-bottom-width: 1px;
+}
+
+.tableList-border-null tbody tr {
+  background: #ffffff;
+}
+
+.tableList tbody tr.hover:hover {
+  background-color: #dadada;
+}
+
+.tableList-border-null tbody tr.hover {
+  background-color: #dadada;
+}
+
+.tableList tbody tr.hover {
+  cursor: pointer;
+}
+
+.tableList-border-null tbody tr.hover {
+  cursor: pointer;
+}
+
+.tableList-border-null tbody td {
+  background: #ffffff;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: 0;
+}
+
+.tableList tfoot td,
+.tableList-border-null tfoot td {
+  background: #efefef;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.table-report,
+.table-report td,
+.table-report th {
+  border: 1px solid rgb(89, 145, 202);
+  padding-right: 2px;
+  padding-left: 2px;
+
+}
+
+.table-report,
+.table-report tr,
+.table-report th {
+  border: 1px solid rgb(89, 145, 202);
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.table-spacing {
+  margin-top: 20px;
+}
+
+.table-report {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+.A4 {
+  border: 1px solid;
+  background: #fff;
+  width: 21cm !important;
+  height: 29.7cm !important;
+  display: block;
+  margin: auto !important;
+  position: relative !important;
+  box-sizing: border-box;
+  font-family: "Cordia New" !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: black;
+}
+
+
+.table-report1,
+.table-report1 td,
+.table-report1 th {
+  border: 1px solid #c7ac82;
+  padding-right: 2px;
+  padding-left: 2px;
+
+}
+
+.table-report1,
+.table-report1 tr,
+.table-report1 th {
+  border: 1px solid #c7ac82;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.table-spacing {
+  margin-top: 20px;
+}
+
+.table-report1 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page {
+  padding: 50px 50px 0 50px;
+  font-size: 14px;
+}
+
+.page1 {
+  padding: 30px 30px 0 30px;
+  font-size: 14px;
+}
+
+@media print {
+  @page {
+    size: A4;
+    font-family: "Sarabun", sans-serif !important;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+}
+
+.footer {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 13px !important;
+  font-weight: bold !important;
+}
+
+textarea:disabled {
+  background-color: #fdfefe;
+  color: #999999;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  box-shadow: 0 0 0 30px white inset;
+}
+
+.shadow-button {
+  box-shadow: 1px 1px 2px 0px #6B84B7BF;
+}
+
+.shadow-menu-profile {
+  box-shadow: 2px 2px 4px 0px #4E4E4E80;
+}
+
+.shadow-heart {
+  box-shadow: 0px 2px 4px 0px #11111180;
+}
+
+.report-page {
+  width: 210mm;
+  height: 297mm;
+  padding: 5mm;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+  position: relative;
+  /* margin-bottom: 20px; */
+  line-height: 1.5;
+
+}
+
+.report-pageA5 {
+  /* width: 148mm;
+  height: 210mm; */
+  width: 210mm;
+  height: 297mm;
+  padding: 5mm;
+  padding-left: 15mm;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+  position: relative;
+  /* margin-bottom: 20px; */
+  line-height: 1.5;
+
+}
+
+.shadow-box {
+  box-shadow: 0px 0px 6px 0px #00000080;
+}
+
+.shadow-button-cardInformation {
+  box-shadow: 2px 2px 4px 0px #4E4E4E80;
+}
+
+
+.table-reportA5 th {
+  border: 1px solid #c7ac82;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.table-reportA5 td {
+  border: 1px solid #c7ac82;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.table-reportA5 {
+  width: 100%;
+  border-collapse: collapse;
+}
+.a4 {
+  width: 210mm; /* ขนาดกระดาษ A4 */
+  height: 297mm;
+  margin: 0 auto; /* จัดกึ่งกลาง */
+  padding: 10mm;
+  box-sizing: border-box; /* คำนวณขนาดรวม border และ padding */
+  font-family: Arial, sans-serif; /* ฟอนต์มาตรฐาน */
+  overflow: hidden; /* ป้องกันเนื้อหาล้น */
+}
+
+.a4 * {
+  max-width: 100%;
+}
+.a4landscape {
+  width: 297mm; /* ขนาดกระดาษ A4 */
+  height: 210mm;
+  margin: 0 auto; /* จัดกึ่งกลาง */
+  padding: 10mm;
+  box-sizing: border-box; /* คำนวณขนาดรวม border และ padding */
+  font-family: Arial, sans-serif; /* ฟอนต์มาตรฐาน */
+  overflow: hidden; /* ป้องกันเนื้อหาล้น */
+}
+
+.a4landscape * {
+  max-width: 100%;
+}
+/* ตั้งค่าหน้าสำหรับการพิมพ์ */
+@media print {
+  @page {
+    size: A4 portrait; /* กำหนดขนาดแนวตั้ง */
+    margin: 0; /* ลบ margin เริ่มต้น */
+  }
+
+  .a4 {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    padding: 10mm;
+    box-sizing: border-box;
+  }
+  .a4landscape {
+    width: 297mm;
+    height: 210mm;
+    margin: 0 auto;
+    padding: 10mm;
+    box-sizing: border-box;
+  }
+  .section {
+    height: auto; /* ป้องกันขยายเกิน */
+    max-height: 297mm; /* จำกัดความสูง */
+    overflow: hidden;
+  }
+  .sectionlandscape {
+    height: auto; /* ป้องกันขยายเกิน */
+    max-height: 210mm; /* จำกัดความสูง */
+    overflow: hidden;
+  }
+  /* ซ่อนองค์ประกอบที่ไม่ต้องการพิมพ์ */
+  .print-none,
+  .m_none {
+    display: none !important;
+  }
+
+  #main {
+    margin-left: unset !important;
+    width: 100%;
+  }
+
+  .nav-print {
+    position: absolute !important;
+    left: -1000px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+.swal2-container {
+  z-index: 20000 !important;
+}
+

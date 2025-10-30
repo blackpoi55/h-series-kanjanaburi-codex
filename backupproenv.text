@@ -1,0 +1,40 @@
+# NEXT_PUBLIC_CHANNEL_ACCESS_TOKEN=jAYyHkUcwf7XyLvcxwWj6oLdhoMi4soGD+p+qRae/XFWRHNQT/zzo5LOVVxIU9/PVkDra3c4SlgmUsQ+fZbp4qF70O5m0Zd8vpBjhwe0eyuZ0CiggiE6qsw7vfLxj4uoc2P3rAg8hPuGxn0lC7PHqwdB04t89/1O/w1cDnyilFU=
+# # production
+# NEXT_PUBLIC_CHANNEL_liffId=2006969206-WwKEG6gO
+# # development
+# # NEXT_PUBLIC_CHANNEL_liffId=2006969206-v3nLG8Y0 
+# NEXT_PUBLIC_API_URL=https://api-h-series.telecorp.co.th/api/healthPatients
+# NEXT_PUBLIC_LINE_API_URL=https://api.line.me/v2/bot
+# API_URL=https://uat-h-series.telecorp.co.th
+
+NEXT_PUBLIC_API_URL=http://10.10.1.66:8051/api/healthPatients
+NEXT_PUBLIC_LINE_API_URL=https://api.line.me/v2/bot
+API_URL=http://10.10.1.66:8051
+
+# #NEXT_API_URL=http://10.10.1.66:8051/api/healthPatients
+
+# #NEXT_PUBLIC_API_URL=https://api-carevita-c.bch.in.th:33333/api/healthPatients
+# #NEXT_PUBLIC_LINE_API_URL=https://api.line.me/v2/bot
+# #API_URL=https://carevita-c.bch.in.th:33333
+
+
+
+NEXT_PUBLIC_CHANNEL_ACCESS_TOKEN=jAYyHkUcwf7XyLvcxwWj6oLdhoMi4soGD+p+qRae/XFWRHNQT/zzo5LOVVxIU9/PVkDra3c4SlgmUsQ+fZbp4qF70O5m0Zd8vpBjhwe0eyuZ0CiggiE6qsw7vfLxj4uoc2P3rAg8hPuGxn0lC7PHqwdB04t89/1O/w1cDnyilFU=
+# production
+NEXT_PUBLIC_CHANNEL_liffId=2006969206-WwKEG6gO
+
+# NEXT_PUBLIC_API_URL=https://api-h-series.telecorp.co.th/api
+# NEXT_PUBLIC_LINE_API_URL=https://api.line.me/v2/bot
+# NEXT_PUBLIC_UPLOAD_BASE_URL=https://api-h-series.telecorp.co.th/uploads
+
+# development
+# NEXT_PUBLIC_CHANNEL_liffId=2006969206-v3nLG8Y0  
+EMAIL_USER=blackpoi55@gmail.com
+EMAIL_PASS=ismc uugx ajwk qdxo
+
+#AI
+OPENAI_API_KEY=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
+GOOGLE_GEMINI_API_KEY=AIzaSyAktasaoJjQTREUoZoCgPikgLGYComUFLY
+
+# ChatGPT  
+OPENAI_API_KEY_GPT=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
